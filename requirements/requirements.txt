@@ -1,0 +1,7 @@
+a2rl
+gym
+loguru
+matplotlib
+numpy
+stable_baselines3
+git+https://github.com/aws-samples/smallmatter-package@main#egg=smallmatter

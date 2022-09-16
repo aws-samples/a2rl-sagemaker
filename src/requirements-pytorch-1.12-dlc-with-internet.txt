@@ -1,0 +1,5 @@
+a2rl
+loguru
+stable_baselines3
+typing-extensions
+git+https://github.com/aws-samples/smallmatter-package@main#egg=smallmatter

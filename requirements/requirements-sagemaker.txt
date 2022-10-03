@@ -2,6 +2,9 @@ loguru
 sagemaker
 git+https://github.com/aws-samples/amazon-sagemaker-entrypoint-utilities@main#egg=smepu
 
-# Ban select 3.* versions that are broken on MBP M1.
+# protobuf-3.* is mandated by SageMaker Python SDK
+# See: https://github.com/aws/sagemaker-python-sdk/blob/master/setup.py
+#
+# MBP M1 needs to ban select 3.* versions.
 # See: https://github.com/protocolbuffers/protobuf/issues/10571
-protobuf<4.*,!=3.19.5,!=3.20.2
+protobuf!=3.19.5,<3.20.2 ; sys_platform=='darwin' and platform_machine=='arm64'
